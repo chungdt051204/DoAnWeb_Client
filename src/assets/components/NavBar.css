@@ -1,0 +1,104 @@
+nav {
+  display: flex;
+  padding: 10px 30px;
+  border-bottom: 1px solid gainsboro;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav > ul:nth-of-type(2) {
+  width: 150%;
+  justify-content: space-between;
+}
+ul:nth-of-type(2) > li {
+  transition: 0.3s;
+}
+ul:nth-of-type(2) > li:hover {
+  transform: scale(1.2);
+  text-decoration: underline brown;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: 0.3s;
+}
+nav > ul:last-of-type {
+  width: 40%;
+  justify-content: end;
+  gap: 20px;
+}
+.input {
+  position: relative;
+}
+.searchSuggestion-track {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  width: 180px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 5px 0;
+}
+.searchSuggestion-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  transition: background-color 0.15s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+.searchSuggestion-item:hover {
+  background-color: #f0f0f0;
+}
+.searchSuggestion-item img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.searchSuggestion-item p {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+ul > li {
+  list-style-type: none;
+}
+li > a {
+  text-decoration: none;
+}
+li > a > p {
+  color: rgb(30, 30, 30);
+}
+li > a > i {
+  font-size: 18px;
+  color: black;
+}
+.user-dropdown {
+  position: relative;
+}
+.user-dropdown > .user-dropdown-item {
+  display: flex;
+}
+.user-dropdown-menu {
+  position: absolute;
+  width: 80px;
+  height: 130px;
+  padding: 0 20px;
+  background-color: white;
+  border: 1px solid gainsboro;
+  border-radius: 15px;
+  left: -30px;
+  cursor: pointer;
+}
+.user-dropdown-menu > a {
+  text-decoration: none;
+  color: black;
+}
