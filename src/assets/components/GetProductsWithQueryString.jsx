@@ -9,8 +9,7 @@ export default function GetProductsWithQueryString() {
   const categoryId = searchParams.get("category_id");
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    let apiBackend =
-      "https://projectweb.kesug.com/server/product/getProducts.php";
+    let apiBackend = "api/getProducts.php";
     if (categoryId) apiBackend = apiBackend + `?category_id=${categoryId}`;
     fetch(apiBackend)
       .then((res) => {
