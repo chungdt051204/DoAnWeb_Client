@@ -60,9 +60,7 @@ function App() {
   }, [refresh]);
 
   useEffect(() => {
-    fetch(
-      "http://localhost/ThucHanhLapTrinhWeb/DoAnThucHanhLapTrinhWeb/server/product/getProducts.php"
-    )
+    fetch("https://projectweb.kesug.com/server/product/getProducts.php")
       .then((res) => {
         if (res.ok) return res.json();
         throw res;
