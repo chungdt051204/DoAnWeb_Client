@@ -60,7 +60,7 @@ function App() {
   }, [refresh]);
 
   useEffect(() => {
-    fetch("https://thanhchung.byethost9.com/server/product/getProducts.php")
+    fetch("api/getProducts.php")
       .then((res) => {
         if (res.ok) return res.json();
         throw res;
