@@ -10,7 +10,7 @@ export default function GetProductsWithQueryString() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     let apiBackend =
-      "http://projectweb.kesug.com/server/product/getProducts.php";
+      "https://projectweb.kesug.com/server/product/getProducts.php";
     if (categoryId) apiBackend = apiBackend + `?category_id=${categoryId}`;
     fetch(apiBackend)
       .then((res) => {
