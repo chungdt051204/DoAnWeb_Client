@@ -1,4 +1,4 @@
-import AdminNavBar from "./AdminNavBar";
+import AdminNavBar from "./AdminNavbar";
 import Footer from "./Footer";
 import { useEffect, useRef, useState } from "react";
 import "./QuanLyNguoiDung.css";
@@ -26,7 +26,7 @@ export default function QuanLyNguoiDung() {
         try {
           const errBody = await err.json();
           console.error("GET error body:", errBody);
-        } catch (e) {
+        } catch (err) {
           console.error("GET error:", err);
         }
         setUsers([]);
