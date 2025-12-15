@@ -60,7 +60,7 @@ function App() {
   }, [refresh]);
 
   useEffect(() => {
-    fetch("api/getProducts.php")
+    fetch("api/getProducts1.php")
       .then((res) => {
         if (res.ok) return res.json();
         throw res;
