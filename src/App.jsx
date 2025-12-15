@@ -65,7 +65,7 @@ function App() {
         if (res.ok) return res.json();
         throw res;
       })
-      .then((data) => {
+      .then(({ data }) => {
         setProductsPage1(data);
       })
       .catch();
